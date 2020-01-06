@@ -1,0 +1,25 @@
+$bg-color: #17191e;
+$border-color: #3f4148;
+.Input {
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color:$bg-color;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 15px;
+  .Input-icon {
+    padding: 0 10px;
+    border-right: 1px solid $border-color; 
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
+    width: 100%;
+    font-family: "HelveticaNeueCyr";
+  }
+}

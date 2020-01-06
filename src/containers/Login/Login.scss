@@ -1,0 +1,75 @@
+$bg-color: #17191e;
+
+
+.Login {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  align-items:center;
+  .login-wrapper {
+    margin-top: 15%;
+    width: 100%;
+  }
+  img {
+    width: max-content;
+  }
+
+  .checkbox {
+    color: #c6c6c6;
+    margin-bottom: 30px;
+    label {
+      display: flex; 
+      align-items: center; 
+     margin-bottom: 12px;
+     font-size: 14px;
+    }
+    input {  
+      display: none;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      margin-right: 10px;
+      height: 25px;
+      width: 25px;
+      background-color: $bg-color;
+      border: 1px solid #1e1f24;
+      border-radius: 50%;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+
+    // &:hover input ~ .checkmark {
+    //   // background-color: #1e2025;
+    // }
+
+    & input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    &  .checkmark:after {
+      top: 9px;
+     left: 9px;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background: white;
+   }
+  }
+
+  .forgot-password {
+    color: #4d505e;
+    font-size: 15px;
+    margin: 15px auto;
+    display: block;
+    width: max-content;
+    cursor: pointer;
+    &:hover {
+      color: #585c6b;
+    }
+  }
+}

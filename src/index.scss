@@ -1,0 +1,31 @@
+@import "./reset.css";
+@import "./assets/fonts/HelveticaNeueCyr/stylesheet.css";
+body {
+  margin: 0;
+  font-family: "HelveticaNeueCyr";
+  letter-spacing: 0.01em;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: #1b1d25;
+}
+
+html,body, .App {
+  height: 100%;
+}
+
+.App {
+  height: 100%; 
+  background: url("./assets/image/bg/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;    
+  min-height: 100vh;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

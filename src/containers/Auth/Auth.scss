@@ -1,0 +1,64 @@
+$dark-color: #3b3f4b;
+$dark-bg-color: #17191e;
+.Auth {
+  .auth-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .top-header {
+    padding-top: 5.25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9.74%;
+
+    @media (max-width: 1400px)  {
+      padding-top: 3.25%;
+      margin-bottom: 5.74%;
+    }
+    @media (max-width: 1280px)  {
+      padding-top: 2.25%;
+      margin-bottom: 3.74%;
+    }
+  }
+
+  .footer {
+    color: $dark-color;
+    font-size: 14px;
+    border-top: 1px solid $dark-color;
+    padding-top: 25px; 
+    margin-top: 4%;
+  }
+
+  .login-component__wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    .login-component-create {
+      margin-left: 30px;
+      width: 360px;
+      min-height: 414px;
+      height: max-content;
+      background-color:$dark-bg-color;
+      border-radius: 15px;
+      box-sizing: border-box;
+      padding: 20px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: max-content;
+        margin: 25px 0;
+      }
+      h3 {
+        width: 100%;
+        color: #e7e7e7;
+        font-family: "HelveticaNeueCyrMedium";
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #1f222a;
+      }
+    }
+  }
+}
